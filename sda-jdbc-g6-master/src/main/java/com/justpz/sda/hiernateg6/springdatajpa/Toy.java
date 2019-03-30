@@ -18,6 +18,17 @@ public class Toy {
     public Toy() {
     }
 
+    @Override
+    public String toString() {
+        return "Toy{" +
+                "id=" + id +
+                ", productionDate=" + productionDate +
+                ", name='" + name + '\'' +
+                ", manufacturere='" + manufacturere + '\'' +
+                ", minAge=" + minAge +
+                '}';
+    }
+
     public Toy(LocalDate productionDate, String name, String manufacturere, int minAge) {
         this.productionDate = productionDate;
         this.name = name;

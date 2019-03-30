@@ -11,6 +11,17 @@ public class SpringApp {
 
 
         ToyService toyService = context.getBean(ToyService.class);
+        toyService.saveTestData();
+        toyService.saveTestData2();
+        toyService.saveTestData();
+        toyService.saveTestData2();
+        toyService.saveTestData();
+        toyService.saveTestData2();
+        toyService.pritAll();
+        toyService.pritAll2();
+
+
+        System.out.println(toyService.toString());
 
     }
 }
